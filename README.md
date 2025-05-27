@@ -1,3 +1,37 @@
+# PUSTIK - Sistem Informasi Manajemen Anggota
+
+Aplikasi web untuk mengelola data anggota dan divisi organisasi.
+
+## Screenshots
+
+### Dashboard
+![Dashboard PUSTIK](/screenshots/dashboard.png)
+
+### Manajemen Anggota
+![Daftar Anggota](/screenshots/anggota-list.png)
+
+### Manajemen Divisi
+![Daftar Divisi](/screenshots/divisi-list.png)
+
+## Cara Menambahkan Screenshot
+
+1. Ambil screenshot dari aplikasi
+2. Simpan file gambar di folder `/screenshots`
+3. Tambahkan gambar ke README.md dengan format:
+```markdown
+![Deskripsi Gambar](/screenshots/nama-file.png)
+```
+
+## Tentang Aplikasi
+
+PUSTIK adalah aplikasi manajemen anggota yang memungkinkan Anda untuk:
+- Mengelola data anggota
+- Mengatur divisi
+- Mengunggah foto anggota
+- Mencatat alamat dan nomor telepon
+
+---
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
