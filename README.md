@@ -4,23 +4,19 @@ Aplikasi web untuk mengelola data anggota dan divisi organisasi.
 
 ## Screenshots
 
-### Dashboard
-![Dashboard PUSTIK](/screenshots/dashboard.png)
-
 ### Manajemen Anggota
-![Daftar Anggota](/screenshots/anggota-list.png)
+![Dashboard PUSTIK](/screenshots/anggota.png)
+
+![Daftar Anggota](/screenshots/tambah.png)
+
+![Daftar Anggota](/screenshots/edit.png)
+
 
 ### Manajemen Divisi
-![Daftar Divisi](/screenshots/divisi-list.png)
+![Daftar Divisi](/screenshots/divisi.png)
 
-## Cara Menambahkan Screenshot
+![Daftar Divisi](/screenshots/tambah_divisi.png)
 
-1. Ambil screenshot dari aplikasi
-2. Simpan file gambar di folder `/screenshots`
-3. Tambahkan gambar ke README.md dengan format:
-```markdown
-![Deskripsi Gambar](/screenshots/nama-file.png)
-```
 
 ## Tentang Aplikasi
 
