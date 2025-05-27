@@ -22,6 +22,8 @@ Route::middleware(['auth'])->group(function () {
         return redirect()->route('anggota.index');
     });
 
-    Route::resource('anggota', AnggotaController::class);
+    Route::resource('anggota', AnggotaController::class)->parameters([
+        'anggota' => 'anggota'
+    ]);
     Route::resource('divisi', DivisiController::class);
 });

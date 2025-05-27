@@ -13,7 +13,7 @@
                 </div>
 
                 <div class="card-body">
-                    <form action="{{ route('anggota.update', $anggota->id) }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('anggota.update', ['anggota' => $anggota->id]) }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
                         
@@ -39,6 +39,24 @@
                                 @endforeach
                             </select>
                             @error('divisi_id')
+                                <span class="invalid-feedback">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="alamat">Alamat</label>
+                            <textarea class="form-control @error('alamat') is-invalid @enderror" 
+                                id="alamat" name="alamat" rows="3">{{ old('alamat', $anggota->alamat) }}</textarea>
+                            @error('alamat')
+                                <span class="invalid-feedback">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="no_telp">Nomor Telepon</label>
+                            <input type="text" class="form-control @error('no_telp') is-invalid @enderror" 
+                                id="no_telp" name="no_telp" value="{{ old('no_telp', $anggota->no_telp) }}">
+                            @error('no_telp')
                                 <span class="invalid-feedback">{{ $message }}</span>
                             @enderror
                         </div>

@@ -27,6 +27,8 @@
                                     <th>No</th>
                                     <th>Foto</th>
                                     <th>Nama</th>
+                                    <th>Alamat</th>
+                                    <th>No. Telepon</th>
                                     <th>Divisi</th>
                                     <th>Aksi</th>
                                 </tr>
@@ -50,6 +52,8 @@
                                         @endif
                                     </td>
                                     <td>{{ $item->nama }}</td>
+                                    <td>{{ $item->alamat }}</td>
+                                    <td>{{ $item->no_telp }}</td>
                                     <td>{{ $item->divisi->nama }}</td>
                                     <td>
                                         <a href="{{ route('anggota.edit', $item->id) }}" class="btn btn-sm btn-warning">
@@ -66,7 +70,7 @@
                                 </tr>
                                 @empty
                                 <tr>
-                                    <td colspan="5" class="text-center">Tidak ada data anggota</td>
+                                    <td colspan="7" class="text-center">Tidak ada data anggota</td>
                                 </tr>
                                 @endforelse
                             </tbody>

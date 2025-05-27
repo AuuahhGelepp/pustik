@@ -15,7 +15,8 @@ class Anggota extends Model
         'nama',
         'foto',
         'divisi_id',
-        // Add other fillable fields based on your migration
+        'alamat',
+        'no_telp'
     ];
 
     public function divisi()
